@@ -97,7 +97,56 @@
 
     <p>Для достижения устойчивого роста солнечной энергетики необходимо продолжить развитие государственной программы поддержки возобновляемых источников энергии, а также увеличить инвестиции в научные исследования и инфраструктуру.</p>
   </section>
+  <section id="calculator">
+    <h2>💡 Калькулятор солнечной энергии</h2>
+    <form id="solar-form">
+      <label for="region">Выберите регион:</label>
+      <select id="region" name="region">
+        <option value="south">Юг России (250 солнечных дней)</option>
+        <option value="central">Центр (170 солнечных дней)</option>
+        <option value="north">Север (100 солнечных дней)</option>
+      </select>
 
+      <label for="area">Площадь панели (м²):</label>
+      <input type="number" id="area" name="area" min="1" required>
+
+      <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+
+  <script src="script.js"></script>
+<section id="quiz">
+  <h2>🧠 Проверь свои знания</h2>
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. Какой регион России получает наибольшее количество солнечных дней?</p>
+      <label><input type="radio" name="q1" value="south"> Юг России</label><br>
+      <label><input type="radio" name="q1" value="central"> Центральная Россия</label><br>
+      <label><input type="radio" name="q1" value="north"> Север России</label>
+    </div>
+
+    <div class="question">
+      <p>2. Какой основной плюс солнечной энергии?</p>
+      <label><input type="radio" name="q2" value="clean"> Экологичность</label><br>
+      <label><input type="radio" name="q2" value="cheap"> Дешёвое оборудование</label><br>
+      <label><input type="radio" name="q2" value="easy"> Простота установки</label>
+    </div>
+
+    <div class="question">
+      <p>3. Что влияет на количество вырабатываемой энергии?</p>
+      <label><input type="radio" name="q3" value="area"> Площадь панелей</label><br>
+      <label><input type="radio" name="q3" value="color"> Цвет крыши</label><br>
+      <label><input type="radio" name="q3" value="wind"> Сила ветра</label>
+    </div>
+
+    <button type="submit">Проверить ответы</button>
+  </form>
+
+  <div id="quiz-result"></div>
+</section>
   <footer>
     <p>Авторы: Мучкинов Давид, Тишман Давид, Рудаков Артем 8 "А"класс, школа №45<br>
   </p>
